@@ -5,8 +5,10 @@ var movieSearch = function(moviePick){
     console.log("In movieSearch");
 
     //Retrieve movePick from localStorage
-    var storedMovie = localStorage.getItem('movie');
+    // var storedMovie = localStorage.getItem('movie');
     
+var storedMovie = "star wars";
+
     console.log(storedMovie);
 
     //API URL with user's movie
