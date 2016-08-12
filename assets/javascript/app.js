@@ -40,13 +40,14 @@ var posterMaker = function() {
 	// localStorage.setItem('movie', moviePick);
 	
 	//Store moviePick in Firebase
-	database.ref('movie').set({moviePick: moviePick});
+	var database = firebase.database();
+    database.ref("currentmoviePick").set({moviePick});
 
  	//Go to movie.html
  	window.open("movie.html", "_self");
  	
  	//Pass user's movie selection
- 	movieSearch(moviePick);
+ 	// movieSearch(moviePick);
 
 });
 
