@@ -172,7 +172,7 @@ margin-top: 1px;
    margin-left: 2.5%;
   overflow: auto;
   padding: 5px 0 5px 5px;
-  box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);
+  box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.15);
   float: left;
  /* margin-top: 1%;*/
   max-width: 425px;
@@ -186,11 +186,11 @@ margin-top: 1px;
   height: auto;
   width: 27%
   margin: 1% 1% 1% 2.5%;
-  color: DarkSlateGray;
+  /*color: DarkSlateGray;*/
   text-align: center;
-  border-radius: 4px;
+ /* border-radius: 4px;*/
   float: left;
-box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);  padding-left: 0;
+box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.15);  padding-left: 0;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -201,11 +201,11 @@ box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);  padding-left: 0;
 
 #plot{
  /*background-color: white;*/
-  color: grey;
+ /* color: grey;*/
   text-align: center;
   height: auto;
   border-radius: 4px;
- box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);
+ box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.15);
   float: right;
   margin-bottom: 5px;
   margin-right: 8%;
@@ -219,9 +219,9 @@ box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);  padding-left: 0;
   height: 300px;
   margin: 1%;
   margin-left: 4%;
-  border-radius: 4px;
+ /* border-radius: 4px;*/
   float: right;
-  box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);
+  box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.15);
   margin-right: 8%;
 }
 
