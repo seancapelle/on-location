@@ -6,8 +6,22 @@ var movieSearch = function(moviePick){
 
     //Retrieve movePick from localStorage
     // var storedMovie = localStorage.getItem('movie');
+
+    var database = firebase.database();
+    database.ref().set({moviePick:storedMovie});
+
     
-var storedMovie = "star wars";
+     database.ref().on("value", function(snapshot) {
+
+                // Print the initial data to the console.
+                console.log(snapshot.val());
+
+                // Log the value of the various properties
+                console.log(snapshot.val().moviePick);
+                
+                var storedMovie = snapshot.val()moviePick;
+
+               });
 
     console.log(storedMovie);
 

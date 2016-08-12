@@ -31,23 +31,22 @@ var posterMaker = function() {
 };
 
 //Submit button clicked
- $('.btn').on('click', function() {
-
+ $('#entermoviebutton').on('click', function() {
+ 	
  	//Take user input 
 	var moviePick = $('#search').val(); 
 
 	//Store moviePick in localStorage
-	localStorage.setItem('movie', moviePick);
-
+	// localStorage.setItem('movie', moviePick);
+	
 	//Store moviePick in Firebase
-	database.ref('movie').set({
-		moviename: moviePick
-	});
+	database.ref('movie').set({moviePick: moviePick});
+
  	//Go to movie.html
- 	//window.open("movie.html", "_self");
+ 	window.open("movie.html", "_self");
  	
  	//Pass user's movie selection
- 	//movieSearch(moviePick);
+ 	movieSearch(moviePick);
 
 });
 
