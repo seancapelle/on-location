@@ -1,0 +1,857 @@
+html, body{
+height: 100%;
+width: 100%
+overflow: auto;
+background-color: black;
+padding-top: 150px;
+<<<<<<< HEAD
+}
+
+#header{
+
+padding-top: 5px;
+font-size: 72px;
+color: white;
+font-family: 'Berkshire Swash', cursive;
+padding-left: 40px;
+letter-spacing: 2px;
+border-bottom: 20px; color: white;
+padding-bottom: 40px;
+
+}
+#headercontainer2{
+float: left;
+padding-top: 2px;
+}
+
+.jumbotron{
+padding-bottom: 26px;
+}
+
+#footer2{
+margin-bottom:10px;
+  border-top: 1px solid #0000ff;
+ padding-top: 60px;
+  text-align: center;
+
+}
+
+header {
+margin: 0;
+padding: 0.5%;
+text-align: center;
+background-color: #000000;
+box-shadow: 0px 1px 10px 0px rgba(149,149,149,1);
+border-bottom: 1px solid #0000ff;
+}
+
+#submit{
+color:  blue;
+
+margin-top: 40px;
+}
+
+#entermoviebutton{
+color: grey;
+padding-top: 5px;
+margin-top: 20px;
+font-family: 'Berkshire Swash', cursive;
+}
+
+#main{
+padding-top: 5px;
+margin-bottom: 40px;
+}
+
+#infoCols{
+padding-left: 10px;
+margin-top: 60;
+margin-bottom: 80px;
+}
+
+#motto{
+font-size: 50px;
+margin-top: 30px;
+}
+
+#movie-posters{
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 200px;
+}
+.frontPoster {
+  width: 163px; 
+  height: 200px;
+}
+
+#jedi{
+  padding-right: 10px;
+}
+
+#amelie{
+  padding-right: 10px;
+}
+
+#teen-wolf{
+  padding-right: 10px;
+}
+#titanic{
+  padding-right: 10px;
+
+}
+#ghostbusters{
+  padding-right: 10px;
+
+}
+#maleficent{
+  padding-right: 10px;
+
+}
+#mitty{
+  padding-right: 10px;
+
+}
+#jaws{
+  padding-right: 10px;
+
+}
+
+#star-wars{
+  padding-right: 10px;
+}
+
+#your-movie{
+
+font-family: 'Quicksand', sans-serif;
+letter-spacing: 2px;
+color: red;
+margin-left: 200px;
+}
+#footer{
+ margin-bottom:10px;
+  border-top: 1px solid #0000ff;
+  padding-bottom: 34px;
+  text-align: center;
+}
+#contentbody{
+  padding-top: -120px;
+  margin-bottom: 5px;
+}
+
+#group-logo{
+margin-top: 1px;
+}
+
+#titlebutton{
+
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 6px;
+  color: red;
+}
+
+#title{
+  float: left; 
+  color: black;
+  padding-bottom: 20px;
+}
+
+#year{
+  float: left;
+  color: black;
+ 
+}
+
+#rating{
+  float: left;
+  color: black;
+}
+#navbar{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+
+}
+#poster{
+  /*background-color: white;*/
+  height: auto;
+  border-radius: 4px;
+   margin-left: 2.5%;
+  overflow: auto;
+  padding: 5px 0 5px 5px;
+  box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);
+  float: left;
+ /* margin-top: 1%;*/
+  max-width: 425px;
+  max-height: 500px;
+  margin-bottom: 20px; 
+  padding-bottom: 20px;
+ }
+
+#youtubetrailer{
+  /*background-color: white;*/
+  height: auto;
+  width: 27%
+  margin: 1% 1% 1% 2.5%;
+  color: DarkSlateGray;
+  text-align: center;
+  border-radius: 4px;
+  float: left;
+box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);  padding-left: 0;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 2.5%;
+  margin-bottom: 120px;
+  
+}
+
+#plot{
+ /*background-color: white;*/
+  color: grey;
+  text-align: center;
+  height: auto;
+  border-radius: 4px;
+ box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 8%;
+  padding-bottom: 40px;
+  padding-top: 5px;
+ }
+
+#googlemap{
+ /* background-color: white;*/
+  text-align: center;
+  height: 300px;
+  margin: 1%;
+  margin-left: 4%;
+  border-radius: 4px;
+  float: right;
+  box-shadow: 0px 1px 10px 0px rgba(255,255,255,0.15);
+  margin-right: 8%;
+}
+
+#homebutton{
+  margin-bottom: 200px;
+  margin-top: 100px;
+  color: #5bc0de;
+  padding-bottom: 15px;
+}
+
+#containerbutton{
+
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 811px){
+#poster{
+  margin: 5px auto;
+  float: none;
+  width: 40%;
+}
+#plot{
+  margin: auto;
+}
+#youtubetrailer{
+  float: none;
+  width: 40%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#googlemap{
+  float: none;
+  margin-top: 10px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px){
+#poster{
+  width: 26.5%;
+
+}
+
+}
+@media screen and (max-width: 1490px){
+#youtubetrailer{
+  width: 22.5%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 1489px){
+  #poster{
+    width: 22.5%;
+  }
+}
+@media screen and (max-width: 1338px){
+#youtubetrailer{
+  width: 27%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#googlemap{
+  margin-right: 5%;
+}
+#plot{
+  margin-right: 5%;
+}
+#poster img{
+  max-width: 250px;
+  max-height: 300px;
+}
+
+@media screen and (max-width: 1109px){
+#poster{
+  float: none;
+  margin: 5px auto;
+  width: 35%;
+}
+#poster img{
+  width: 95%;
+}
+#plot{
+  float: none;
+  margin-right: 0;
+  width: 100%
+}
+#youtubetrailer{
+  float: none;
+  margin: auto;
+  width: 35%;
+}
+#googlemap{
+  width: 100%;
+  margin-right: 0;
+  margin-top: 20px;
+}
+}
+@media screen and (max-width: 1109px){
+#poster{
+  float: none;
+  margin: 5px auto;
+  width: 35%;
+}
+#poster img{
+  width: 95%;
+}
+#plot{
+  float: none;
+  margin-right: 0;
+  width: 100%
+}
+#youtubetrailer{
+  float: none;
+  margin: auto;
+  width: 35%;
+}
+#googlemap{
+  width: 100%;
+  margin-right: 0;
+  margin-top: 20px;
+}
+}
+/*@media(min-width: 768px){
+#poster{
+  width: 24%;
+  margin-right:auto;
+}*/
+}
+
+@media only screen and (max-width: 900px) and (min-width: 725px){
+#poster{
+  width: 24%;
+}
+#poster img{
+  width: 95%;
+}
+}
+@media only screen and (max-width: 720px) and (min-width: 420px){
+#poster{
+  width: 50%;
+  margin: 5px auto;
+  float: none;
+}
+#poster img{
+  width: 98%;
+}
+#plot{
+  float: none;
+  margin: 10px auto;
+  width: 80%;
+}
+#youtubetrailer{
+  float: none;
+  margin: 10px auto;
+  width: 42%;
+}
+#googlemap{
+  float: none;
+  width: 80%;
+  margin: 10px auto;
+}
+}
+@media screen and (max-width: 415px){
+#youtubetrailer{
+  width: 80%;
+  margin: auto;
+}
+#poster{
+  width: 90%;
+  overflow: visible;
+  margin-bottom: 10px;
+}
+#poster img{
+  width: 98%;
+}
+#plot{
+  margin-right: 0;
+}
+#youtubetrailer{
+  float: none;
+}
+#googlemap{
+  float: none;
+  margin: 10px auto;
+}
+@media only screen and (max-width: 600px) {
+
+    #container wrapper{
+        width: 450px;
+        height: 450px;
+        margin: 10px;
+        background-size: 900px;
+        animation-duration: 6s;
+        margin-left: 15%;
+    }
+}
+
+/*/
+html, body{
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+=======
+>>>>>>> d2b1dade19c2e2d300ab531bc3aa9913c009bb70
+}
+
+#header{
+
+padding-top: 5px;
+font-size: 72px;
+color: white;
+font-family: 'Berkshire Swash', cursive;
+padding-left: 40px;
+letter-spacing: 2px;
+border-bottom: 20px; color: white;
+padding-bottom: 40px;
+
+}
+#headercontainer2{
+float: left;
+padding-top: 2px;
+}
+
+.jumbotron{
+padding-bottom: 26px;
+}
+
+#footer2{
+margin-bottom:10px;
+  border-top: 1px solid #0000ff;
+ 
+  text-align: center;
+
+}
+
+header {
+margin: 0;
+padding: 0.5%;
+text-align: center;
+background-color: #000000;
+box-shadow: 0px 1px 10px 0px rgba(149,149,149,1);
+border-bottom: 1px solid #0000ff;
+}
+
+#submit{
+color:  blue;
+
+margin-top: 40px;
+}
+
+#entermoviebutton{
+color: grey;
+padding-top: 5px;
+margin-top: 20px;
+font-family: 'Berkshire Swash', cursive;
+}
+
+<<<<<<< HEAD
+.frontPoster {
+  width: 163px; 
+  height: 200px;
+}
+
+#movie-posters{
+=======
+#main{
+padding-top: 5px;
+margin-bottom: 40px;
+}
+
+#infoCols{
+>>>>>>> d2b1dade19c2e2d300ab531bc3aa9913c009bb70
+padding-left: 10px;
+margin-top: 60;
+margin-bottom: 80px;
+}
+
+#motto{
+font-size: 50px;
+margin-top: 30px;
+}
+
+#movie-posters{
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 200px;
+}
+
+#jedi{
+  padding-right: 10px;
+}
+
+#amelie{
+  padding-right: 10px;
+}
+
+#teen-wolf{
+  padding-right: 10px;
+}
+#titanic{
+  padding-right: 10px;
+
+}
+#ghostbusters{
+  padding-right: 10px;
+
+}
+#maleficent{
+  padding-right: 10px;
+
+}
+#mitty{
+  padding-right: 10px;
+
+}
+#jaws{
+  padding-right: 10px;
+
+}
+
+#star-wars{
+  padding-right: 10px;
+}
+
+#your-movie{
+
+font-family: 'Quicksand', sans-serif;
+letter-spacing: 2px;
+color: red;
+margin-left: 200px;
+}
+#footer{
+ margin-bottom:10px;
+  border-top: 1px solid #0000ff;
+  padding-bottom: 34px;
+  text-align: center;
+}
+#contentbody{
+  padding-top: -120px;
+  margin-bottom: 5px;
+}
+
+#group-logo{
+margin-top: 1px;
+}
+
+#titlebutton{
+
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 6px;
+  color: red;
+}
+
+#title{
+  float: left; 
+  color: black;
+  padding-bottom: 20px;
+}
+
+#year{
+  float: left;
+  color: black;
+ 
+}
+
+#rating{
+  float: left;
+  color: black;
+}
+#navbar{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+
+}
+#poster{
+  background-color: white;
+  height: auto;
+  border-radius: 4px;
+   margin-left: 2.5%;
+  overflow: auto;
+  padding: 5px 0 5px 5px;
+  box-shadow: 0px 1px 10px 0px rgba(186,186,186,1);
+  float: left;
+  margin-top: 1%;
+  max-width: 425px;
+  max-height: 500px;
+  margin-bottom: 20px; 
+  padding-bottom: 20px;
+ }
+
+#youtubetrailer{
+  background-color: white;
+  height: auto;
+  width: 27%
+  margin: 1% 1% 1% 2.5%;
+  color: DarkSlateGray;
+  text-align: center;
+  border-radius: 4px;
+  float: left;
+  box-shadow: 0px 1px 10px 0px rgba(186,186,186,1);
+  padding-left: 0;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#plot{
+ background-color: white;
+  color: grey;
+  text-align: center;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0px 1px 10px 0px rgba(186,186,186,1);
+  float: right;
+  margin-top: 1%;
+  margin-right: 8%;
+ }
+
+#googlemap{
+  background-color: white;
+  text-align: center;
+  height: 300px;
+  margin: 1%;
+  margin-left: 4%;
+  border-radius: 4px;
+  float: right;
+  box-shadow: 0px 1px 10px 0px rgba(186,186,186,1);
+  margin-right: 8%;
+}
+
+#homebutton{
+  margin-bottom: 200px;
+  margin-top: 100px;
+  color: #5bc0de;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 811px){
+#poster{
+  margin: 5px auto;
+  float: none;
+  width: 40%;
+}
+#plot{
+  margin: auto;
+}
+#youtubetrailer{
+  float: none;
+  width: 40%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#googlemap{
+  float: none;
+  margin-top: 10px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px){
+#poster{
+  width: 26.5%;
+
+}
+
+}
+@media screen and (max-width: 1490px){
+#youtubetrailer{
+  width: 22.5%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 1489px){
+  #poster{
+    width: 22.5%;
+  }
+}
+@media screen and (max-width: 1338px){
+#youtubetrailer{
+  width: 27%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#googlemap{
+  margin-right: 5%;
+}
+#plot{
+  margin-right: 5%;
+}
+#poster img{
+  max-width: 250px;
+  max-height: 300px;
+}
+
+}
+@media screen and (max-width: 1109px){
+#poster{
+  float: none;
+  margin: 5px auto;
+  width: 35%;
+}
+#poster img{
+  width: 95%;
+}
+#plot{
+  float: none;
+  margin-right: 0;
+  width: 100%
+}
+#youtubetrailer{
+  float: none;
+  margin: auto;
+  width: 35%;
+}
+#googlemap{
+  width: 100%;
+  margin-right: 0;
+  margin-top: 20px;
+}
+}
+@media screen and (max-width: 1109px){
+#poster{
+  float: none;
+  margin: 5px auto;
+  width: 35%;
+}
+#poster img{
+  width: 95%;
+}
+#plot{
+  float: none;
+  margin-right: 0;
+  width: 100%
+}
+#youtubetrailer{
+  float: none;
+  margin: auto;
+  width: 35%;
+}
+#googlemap{
+  width: 100%;
+  margin-right: 0;
+  margin-top: 20px;
+}
+}
+/*/*@media(min-width: 768px){
+#artistPic{
+  width: 24%;
+  margin-right:auto;
+}
+}*/
+
+@media only screen and (max-width: 900px) and (min-width: 725px){
+#poster{
+  width: 24%;
+}
+#poster img{
+  width: 95%;
+}
+}
+@media only screen and (max-width: 720px) and (min-width: 420px){
+#poster{
+  width: 50%;
+  margin: 5px auto;
+  float: none;
+}
+#poster img{
+  width: 98%;
+}
+#plot{
+  float: none;
+  margin: 10px auto;
+  width: 80%;
+}
+#youtubetrailer{
+  float: none;
+  margin: 10px auto;
+  width: 42%;
+}
+#googlemap{
+  float: none;
+  width: 80%;
+  margin: 10px auto;
+}
+}
+@media screen and (max-width: 415px){
+#youtubetrailer{
+  width: 80%;
+  margin: auto;
+}
+#poster{
+  width: 90%;
+  overflow: visible;
+  margin-bottom: 10px;
+}
+#poster img{
+  width: 98%;
+}
+#plot{
+  margin-right: 0;
+}
+#youtubetrailer{
+  float: none;
+}
+#googlemap{
+  float: none;
+  margin: 10px auto;
+}
+@media only screen and (max-width: 600px) {
+
+    #container wrapper{
+        width: 450px;
+        height: 450px;
+        margin: 10px;
+        background-size: 900px;
+        animation-duration: 6s;
+        margin-left: 15%;
+    }
+}

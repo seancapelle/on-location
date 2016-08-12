@@ -22,6 +22,17 @@
         <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand" rel="stylesheet">
 
         <!-- Firebase area??? -->
+        <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCiJ0tSATiJ0Oe8fzTx_1b-CoyDDK3FQog",
+    authDomain: "onlocation-1470495894277.firebaseapp.com",
+    databaseURL: "https://onlocation-1470495894277.firebaseio.com",
+    storageBucket: "onlocation-1470495894277.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
 </head>
 
 <body>
@@ -44,13 +55,19 @@
                 <div id="moviepage">
                 <div class="row">
                     <div id="poster" class="col-sm-4">
-                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPgPW8mm2EwxATtlBhy79Dc9ZcMf1sCTh12bz2HZPTVA4dJgg6"> </div>
-                    <div id="plot" class="col-sm-7"><img src="http://bartsblackboard.com/files/2010/03/the.simpsons.s17e20.jpg"></div>
+                    <!-- <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPgPW8mm2EwxATtlBhy79Dc9ZcMf1sCTh12bz2HZPTVA4dJgg6"> </div> -->
+                    <div id="plot" class="col-sm-7">
+                    <!-- <img src="http://bartsblackboard.com/files/2010/03/the.simpsons.s17e20.jpg"> -->
+                    </div>
                 </div>
                 
                 <div class="row" id="bottomrow">
-                     <div id="youtubetrailer" class="col-sm-3"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE6oC2RbAmt0EZrhJD5uoiO3ttEFKaSSBN7lF1mG3rh5drd9XD"></div>
-                     <div id="googlemap" class="col-sm-7"><img src="https://d32ogoqmya1dw8.cloudfront.net/images/sp/library/google_earth/google_maps_hello_world.jpg"></div>
+                     <div id="youtubetrailer" class="col-sm-3">
+                     <!-- <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE6oC2RbAmt0EZrhJD5uoiO3ttEFKaSSBN7lF1mG3rh5drd9XD"> -->
+                     </div>
+                     <div id="googlemap" class="col-sm-7">
+                     <!-- <img src="https://d32ogoqmya1dw8.cloudfront.net/images/sp/library/google_earth/google_maps_hello_world.jpg"> -->
+                     </div>
                 </div>
             </div>
             </div>
@@ -70,9 +87,15 @@
         <!-- Footer with the team logo from freelogodesign.com -->
 <div id="footer2" style="background-color:#ffdf32;"><center><a href="index.html"><img id="group-logo" src="assets/images/group-logo.png" width="80px;" height="100px;"></center></a></div>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="assets/javascript/app2.js"></script>
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBftOH0wF8TmozxEQNEfSFizvuk_LFtk0k&callback=initMap"
+    async defer></script>
+<script>
 
-        <!-- External JavaScript file -->
-        <script src="assets/javascript/app.js"></script>
+
+        
 
         
     </body>
