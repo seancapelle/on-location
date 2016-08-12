@@ -20,7 +20,17 @@
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Corben|Monoton" rel="stylesheet">
     
     <!-- Add Firebase Here!! -->
-    
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCiJ0tSATiJ0Oe8fzTx_1b-CoyDDK3FQog",
+        authDomain: "onlocation-1470495894277.firebaseapp.com",
+        databaseURL: "https://onlocation-1470495894277.firebaseio.com",
+        storageBucket: "onlocation-1470495894277.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
     
     <!-- Javascript animation allows #film-reel image to rotate on the homepage (index.html). The else if are for viewing on various browsers.  Our var looper is our setTimeout method. We will start at 0 degrees -->
     <script>

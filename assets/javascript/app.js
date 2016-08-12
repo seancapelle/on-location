@@ -51,7 +51,7 @@ var posterMaker = function() {
 		moviename: moviePick
 	});
  	//Go to movie.html
- 	//window.open("movie.html", "_self");
+ 	window.open("movie.html", "_self");
  	
  	//Pass user's movie selection
 
