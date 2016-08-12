@@ -1,10 +1,11 @@
 
-
 //Functions
 //Grabs movie's data
 var movieSearch = function(){
 
-    console.log("In movieSearch");
+console.log("In movieSearch");
+
+    
 
   var storedMovie = '';  
 
@@ -117,6 +118,11 @@ var initMap = function(long, lat) {
           zoom: 8
         });
  };
+//Page ready
+$(document).ready(function() { 
+
+    console.log("test");
 
 //Calls the function
  movieSearch();
+});

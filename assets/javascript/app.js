@@ -34,7 +34,7 @@ var posterMaker = function() {
  $('.btn').on('click', function() {
 
  	//Take user input 
-	var moviePick = $('#search').val(); 
+	var moviePick = $('#search').val().split(' ').join('+'); 
 
 	//Store moviePick in localStorage
 
@@ -44,16 +44,13 @@ var posterMaker = function() {
 	var database = firebase.database();
     database.ref("currentmoviePick").set({moviePick});
 
-
-
 	//Store moviePick in Firebase
 	database.ref('movie').set({
 		moviename: moviePick
 	});
  	//Go to movie.html
  	window.open("movie.html", "_self");
- 	
- 	//Pass user's movie selection
+
 
 
 });
@@ -64,22 +61,24 @@ $(document).ready(function() {
 //Make posters
 posterMaker(); 
 
-//Posters clicked
-$(document).on('click', '.frontPoster', function() {
+	//User clicks movie poster
+	$(document).on('click', '.frontPoster', function() {
 
-	console.log("Clicked");
+		console.log("Clicked");
 
-	// <form action="movie.html" method="GET" ></form>
+		//Take user input 
+		var moviePick = $(this).data('image').split(' ').join('+');
 
-	//Take user input 
-	var moviePick = $(this).data('image');
+		//Store moviePick in Firebase
+		var database = firebase.database();
+	    database.ref("currentmoviePick").set({moviePick});
 
-	//Store moviePick in localStorage
-	localStorage.setItem('movie', moviePick);
+		console.log(moviePick);
 
-	console.log(moviePick);
+		//Go to movie.html
+	 	window.open("movie.html", "_self");
 
-});
+	});
 
 });
 
