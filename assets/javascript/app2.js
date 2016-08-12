@@ -1,19 +1,36 @@
+
+
 //Functions
 //Grabs movie's data
-var movieSearch = function(moviePick){
+var movieSearch = function(){
 
     console.log("In movieSearch");
 
+  var storedMovie = '';  
+
     //Retrieve movePick from localStorage
     // var storedMovie = localStorage.getItem('movie');
-    
-var storedMovie = "star wars";
 
-    console.log(storedMovie);
+
+var database = firebase.database();
+    
+     database.ref("currentmoviePick").on("value", function(snapshot) {
+
+                // Print the initial data to the console.
+                console.log(snapshot.val());
+
+                // Log the value of the various properties
+                console.log(snapshot.val().moviePick);
+                
+                storedMovie = snapshot.val().moviePick;
+
+ console.log(storedMovie);
+
 
     //API URL with user's movie
     var queryURL = "http://api.myapifilms.com/imdb/idIMDB?title=" + storedMovie + "&token=66a93a66-d0a3-4bcf-b682-329ad22dc9c3";
 
+    console.log(queryURL);
     //Ajax call
     $.ajax({url: queryURL, method: 'GET'})
         //Ajax response
@@ -43,6 +60,17 @@ var storedMovie = "star wars";
         
         geoCode(movie.location);
     });
+
+
+
+
+
+
+
+
+               });
+
+   
 }
             //David's API call
             // $.ajax({

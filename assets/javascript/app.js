@@ -37,7 +37,14 @@ var posterMaker = function() {
 	var moviePick = $('#search').val(); 
 
 	//Store moviePick in localStorage
-	localStorage.setItem('movie', moviePick);
+
+	// localStorage.setItem('movie', moviePick);
+	
+	//Store moviePick in Firebase
+	var database = firebase.database();
+    database.ref("currentmoviePick").set({moviePick});
+
+
 
 	//Store moviePick in Firebase
 	database.ref('movie').set({
@@ -47,7 +54,7 @@ var posterMaker = function() {
  	//window.open("movie.html", "_self");
  	
  	//Pass user's movie selection
- 	//movieSearch(moviePick);
+
 
 });
 
