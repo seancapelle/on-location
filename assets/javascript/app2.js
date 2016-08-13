@@ -1,17 +1,11 @@
-
 //Functions
+
 //Grabs movie's data
 var movieSearch = function(){
 
 console.log("In movieSearch");
 
-    
-
-  var storedMovie = '';  
-
-    //Retrieve movePick from localStorage
-    // var storedMovie = localStorage.getItem('movie');
-
+var storedMovie = '';  
 
 var database = firebase.database();
     
@@ -24,9 +18,6 @@ var database = firebase.database();
                 console.log(snapshot.val().moviePick);
                 
                 storedMovie = snapshot.val().moviePick;
-
- console.log(storedMovie);
-
 
     //API URL with user's movie
     var queryURL = "http://api.myapifilms.com/imdb/idIMDB?title=" + storedMovie + "&token=66a93a66-d0a3-4bcf-b682-329ad22dc9c3";

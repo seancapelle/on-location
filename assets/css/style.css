@@ -56,6 +56,11 @@ margin-top: 20px;
 font-family: 'Berkshire Swash', cursive;
 }
 
+.frontPoster {
+  width: 163px;
+  height: 200px;
+}
+
 #main{
 padding-top: 5px;
 margin-bottom: 40px;
