@@ -20,47 +20,39 @@ var database = firebase.database();
                 storedMovie = snapshot.val().moviePick;
 
     //API URL with user's movie
-    var queryURL = "https://api.myapifilms.com/imdb/idIMDB?title=" + storedMovie + "&token=66a93a66-d0a3-4bcf-b682-329ad22dc9c3";
+    var queryURL = "http://api.myapifilms.com/imdb/idIMDB?title=" + storedMovie + "&token=66a93a66-d0a3-4bcf-b682-329ad22dc9c3";
 
     console.log(queryURL);
-    //Ajax call
-    $.ajax({url: queryURL, method: 'GET'})
-        //Ajax response
-        .done(function(response) {
+        //Ajax call
+        $.ajax({url: queryURL, method: 'GET'})
+            //Ajax response
+            .done(function(response) {
 
-            console.log(response);
+                console.log(response);
 
-            var image = response.data.movies[0].urlPoster;
+                var image = response.data.movies[0].urlPoster;
 
-            //Create movie object
-            var movie = {
-                title: response.data.movies[0].title,
-                year: response.data.movies[0].year,
-                rating: response.data.movies[0].rated,
-                plot: response.data.movies[0].simplePlot,
-                poster: response.data.movies[0].urlPoster,
-                location: response.data.movies[0].filmingLocations.toString(), 
-            };
+                //Create movie object
+                var movie = {
+                    title: response.data.movies[0].title,
+                    year: response.data.movies[0].year,
+                    rating: response.data.movies[0].rated,
+                    plot: response.data.movies[0].simplePlot,
+                    poster: response.data.movies[0].urlPoster,
+                    location: response.data.movies[0].filmingLocations.toString(), 
+                };
 
-            console.log(movie.location);
-            //Push movie properties
-            $('#title').append(movie.title);
-            $('#year').append(movie.year);
-            $('#rating').append(movie.rating);
-            $('#plot').append(movie.plot);
-            $('#poster').append('<img src =' + movie.poster + '</>');
-        
-        geoCode(movie.location);
-    });
-
-
-
-
-
-
-
-
-               });
+                console.log(movie.location);
+                //Push movie properties
+                $('#title').append(movie.title);
+                $('#year').append(movie.year);
+                $('#rating').append(movie.rating);
+                $('#plot').append(movie.plot);
+                $('#poster').append('<img src =' + movie.poster + '</>');
+            
+            geoCode(movie.location);
+        });
+});
 
    
 }
@@ -96,23 +88,32 @@ var geoURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + loca
             console.log(lat);
             console.log(long);
             
-            initMap(long, lat);
+            initMap(long, lat, location);
     });
 
 }
 //Create map based on lat and long
-var initMap = function(long, lat) {
+var initMap = function(long, lat, location) {
+
+        var myLatLng = { lat: lat, lng: long};
+
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('googlemap'), {
-          center: {lat: lat, lng: long},
+          center: myLatLng,
+          // {lat: lat, lng: long},
           scrollwheel: true,
           zoom: 8
         });
+
+        var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: location
+  });
+
  };
 //Page ready
 $(document).ready(function() { 
-
-    console.log("test");
 
 //Calls the function
  movieSearch();
