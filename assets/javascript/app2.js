@@ -20,7 +20,7 @@ var database = firebase.database();
                 storedMovie = snapshot.val().moviePick;
 
     //API URL with user's movie
-    var queryURL = "http://api.myapifilms.com/imdb/idIMDB?title=" + storedMovie + "&token=66a93a66-d0a3-4bcf-b682-329ad22dc9c3";
+    var queryURL = "https://api.myapifilms.com/imdb/idIMDB?title=" + storedMovie + "&token=66a93a66-d0a3-4bcf-b682-329ad22dc9c3";
 
     console.log(queryURL);
     //Ajax call
